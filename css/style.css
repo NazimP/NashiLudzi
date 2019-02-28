@@ -1,0 +1,296 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Here I will style the body */
+body {
+    font-family:  'OrkneyRegular';
+    margin: 0;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/Higher.otf');
+}
+
+/* Header/logo Title */
+.header {
+    font-family: myFirstFont;
+    padding: 40px;
+    text-align: center;
+background-image: url("../images/8.jpg");
+    color: gold;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 100px;
+}
+
+.header p{
+    font-size: 50px;
+}
+
+/* Navbar effects */
+
+div.cont
+{
+
+    margin: 0 auto;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+div.cont a
+{
+    color: gold;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.navbar a:before, div.navbar a:after
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0px;
+    content: '';
+    background: gold;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.yellow  {
+    background: black;
+}
+
+div.navbar a:before
+{
+    left: 0px;
+}
+
+div.navbar a:after
+{
+    right: 0px;
+}
+
+div.navbar a:hover:before, div.navbar a:hover:after
+{
+    width: 100%;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* images */
+.fakeimg {
+    background-color: black;
+    width: 100%;
+    padding: 0px;
+}
+
+/* Footer */
+.footer {
+
+    text-align: center;
+    background: whitesmoke;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/* Footer quote slider!!!!!!!!!!!!!!!!!!!!!
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: black;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*Here I will try to position "prev button" to the left */
+
+.prev {
+    position: absolute;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: whitesmoke;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;
+    color:gold;
+}
+
+/* Add a blue color to the author */
+.author {color: gold;}
+
+
+/* Style Buy Ticket Buttons */
+
+.submit-button {
+    background-color:#000000;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#f2f1e6;
+
+    font-size:17px;
+    font-weight:bold;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+}
+.submit-button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+/* Style social media buttons*/
+
+.fa {
+
+    padding: 10px;
+    font-size: 39px;
+    width: 39px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.fa-youtube {
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    background: black;
+    color: white;
+}
+
+
+/* Style sticky navbar */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
