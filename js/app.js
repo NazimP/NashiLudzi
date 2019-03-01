@@ -7,13 +7,24 @@ document.addEventListener("DOMContentLoaded", function () {
 //BUTTON redirection to buy tickets
 
 document.getElementById("myButton").onclick = function () {
-    location.href = "https://goout.net/pl/bilety/kazka/mmvd/";
+    location.href = "https://kazka.pl/ru";
 };
 
 document.getElementById("myButtonL").onclick = function () {
-    location.href = "https://goout.net/pl/bilety/lyapis-98/dfbe/";
+    location.href = "https://lyapis98.eu/";
 };
 
+    document.getElementById("ytb").onclick = function () {
+        location.href = "https://www.youtube.com/channel/UCKyMnoNjBVQneMEdTo4W9Aw";
+    };
+
+    document.getElementById("fc").onclick = function () {
+        location.href = "https://www.facebook.com/wroclaww/";
+    };
+
+    document.getElementById("inst").onclick = function () {
+        location.href = "http://instagram.com/nashi_ludzi/";
+    };
 // BUTTON redirection finish
 
 //STICKY NAVBAR!!!!!!!!!!!!!!!!!!!!!
@@ -34,9 +45,7 @@ function myFunctionN() {
 
 
 
-
-})
-
+});
 
 //QUOTE SLIDER
 var slideIndex = 1;
